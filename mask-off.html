@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Mask Off</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-dusk">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell mask-shell">
+      <header class="feature-header">
+        <a href="dashboard.html" class="back-link">← Back</a>
+        <div>
+          <p class="eyebrow">Private space</p>
+          <h1>Mask Off</h1>
+        </div>
+      </header>
+
+      <section class="mask-layout">
+        <aside class="panel">
+          <div class="panel-block">
+            <h2>You don't have to pretend here.</h2>
+            <p class="muted-copy">No expectations. No performance. Just a space to be honest with yourself.</p>
+          </div>
+
+          <div class="panel-block">
+            <h3>Prompt starters</h3>
+            <div class="prompt-chips">
+              <button class="prompt-chip" type="button">What have you been pretending not to feel?</button>
+              <button class="prompt-chip" type="button">What do you wish people understood about you?</button>
+              <button class="prompt-chip" type="button">What are you tired of pretending?</button>
+              <button class="prompt-chip" type="button">What's something you're afraid to admit?</button>
+              <button class="prompt-chip" type="button">What would you say if nobody could judge you?</button>
+              <button class="prompt-chip" type="button">What has been bothering you that you haven't told anyone?</button>
+            </div>
+          </div>
+
+          <div class="panel-block">
+            <h3>The Unsaid</h3>
+            <div class="prompt-group">
+              <strong>Relationships</strong>
+              <button class="prompt-chip" type="button">I feel invisible in the people around me.</button>
+              <button class="prompt-chip" type="button">I don't know how to say what hurts.</button>
+            </div>
+            <div class="prompt-group">
+              <strong>Family</strong>
+              <button class="prompt-chip" type="button">I feel like I have to be easy to keep peace.</button>
+            </div>
+            <div class="prompt-group">
+              <strong>Self-worth</strong>
+              <button class="prompt-chip" type="button">I keep measuring my worth by what I can do for others.</button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="panel chat-panel">
+          <div class="chat-header">
+            <h2>Private reflection</h2>
+            <div class="chat-actions">
+              <button class="btn ghost" id="new-mask-chat" type="button">New conversation</button>
+              <button class="btn ghost" id="clear-mask-chat" type="button">Clear</button>
+            </div>
+          </div>
+
+          <div id="mask-chat" class="message-stream" aria-live="polite"></div>
+
+          <form id="mask-form" class="mask-form">
+            <label for="mask-input">Write freely</label>
+            <textarea id="mask-input" placeholder="You don't have to dress it up. Start here..."></textarea>
+            <div class="form-actions">
+              <button class="btn ghost" id="save-mask-journal" type="button">Save to private journal</button>
+              <button class="btn primary" type="submit">Send to Nora</button>
+            </div>
+          </form>
+
+          <div id="transfer-banner" class="transfer-banner hidden">
+            <p>Would you like to explore this feeling in your Emotional Backpack?</p>
+            <div class="transfer-actions">
+              <button class="btn primary" id="accept-transfer" type="button">Yes, add it</button>
+              <button class="btn ghost" id="decline-transfer" type="button">Not now</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/mask-off.js"></script>
+  </body>
+</html>

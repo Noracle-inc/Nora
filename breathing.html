@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Breathing</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-light-starry">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell breathing-shell">
+      <div class="card page-card breathing-card">
+        <div class="feature-header">
+          <a href="dashboard.html" class="back-link">← Back</a>
+          <div>
+            <p class="eyebrow">Gentle regulation</p>
+            <h1>Breathe with Noracle</h1>
+          </div>
+        </div>
+
+        <div class="breathing-layout">
+          <div class="orb" id="breath-orb" aria-live="polite">Inhale</div>
+
+          <div class="breathing-panel">
+            <label>
+              Current feeling
+              <select id="emotion-select">
+                <option value="anxious">Anxious</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+                <option value="overwhelmed">Overwhelmed</option>
+                <option value="tired">Tired</option>
+                <option value="calm">Calm</option>
+              </select>
+            </label>
+
+            <div class="microcopy" id="breath-guide">Breathe in slowly and let the body soften.</div>
+
+            <div class="cta-row">
+              <button class="btn primary" id="start-breathing" type="button">Start</button>
+              <button class="btn ghost" id="stop-breathing" type="button">Stop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/breathing.js"></script>
+  </body>
+</html>

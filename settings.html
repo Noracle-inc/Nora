@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Settings</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-light-starry app-shell">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell">
+      <div class="page-card card settings-shell">
+        <div class="feature-header">
+          <a href="dashboard.html" class="back-link">← Back</a>
+          <div>
+            <p class="eyebrow">Your controls</p>
+            <h1 data-i18n="settings.title">Settings</h1>
+          </div>
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle color theme">◐</button>
+        </div>
+
+        <form id="settings-form" class="stacked-form">
+          <div class="form-row">
+            <label>
+              <span data-i18n="settings.theme">Theme</span>
+              <select id="settings-theme">
+                <option value="light-starry">Light starry</option>
+                <option value="dusk">Dusk</option>
+                <option value="gold">Golden glow</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="nav.language">Language</span>
+              <select id="settings-language">
+                <option value="en">English</option>
+                <option value="ha">Hausa</option>
+                <option value="ig">Igbo</option>
+                <option value="yo">Yorùbá</option>
+                <option value="pcm">Nigerian Pidgin</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="toggle-row">
+            <span data-i18n="settings.daily">Daily notifications</span>
+            <input id="settings-notifications" type="checkbox" checked />
+          </label>
+
+          <label class="toggle-row">
+            <span data-i18n="settings.private">Private mode (do not save new conversations)</span>
+            <input id="settings-privacy" type="checkbox" checked />
+          </label>
+
+          <label class="toggle-row">
+            <span data-i18n="settings.reminders">Gentle reminders</span>
+            <input id="settings-reminders" type="checkbox" checked />
+          </label>
+
+          <label class="toggle-row">
+            <span data-i18n="settings.motion">Reduce motion</span>
+            <input id="settings-reduced-motion" type="checkbox" />
+          </label>
+
+          <label class="toggle-row">
+            <span data-i18n="settings.memory">Save conversations to my account history (optional)</span>
+            <input id="settings-memory" type="checkbox" />
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit" data-i18n="settings.save">Save settings</button>
+            <button id="reset-settings" class="btn secondary" type="button" data-i18n="settings.reset">Reset to defaults</button>
+            <span id="settings-status" class="status-text" role="status" aria-live="polite">Your preferences are stored in this browser until you sign in.</span>
+          </div>
+        </form>
+
+        <section class="panel-block account-controls" aria-labelledby="data-controls-heading">
+          <h2 id="data-controls-heading" data-i18n="settings.data">Your data and account</h2>
+          <p class="muted-copy">
+            Your reflections are personal. You can export your data or remove your account and its saved data.
+          </p>
+          <div class="form-actions">
+            <button id="clear-local-data" class="btn secondary" type="button">Clear browser-only data</button>
+            <button id="export-data" class="btn secondary" type="button" disabled data-i18n="settings.export">Export my data</button>
+            <button id="sign-out" class="btn secondary" type="button" disabled data-i18n="settings.signOut">Sign out</button>
+            <button id="delete-account" class="btn danger" type="button" disabled data-i18n="settings.delete">Delete account and data</button>
+          </div>
+          <span id="account-status" class="status-text" role="status" aria-live="polite">Sign in to manage your account data.</span>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/settings.js"></script>
+  </body>
+</html>

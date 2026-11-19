@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-dusk app-shell">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="app-layout">
+      <aside id="app-sidebar" class="sidebar">
+        <div class="brand" aria-label="Noracle logo">
+          <span class="brand-mark">N</span>
+          <span>Noracle</span>
+        </div>
+        <nav class="sidebar-nav" aria-label="Wellbeing tools">
+          <a href="chat.html" data-i18n="nav.nora">Nora AI</a>
+          <a href="therapists.html" data-i18n="nav.therapist">Real therapist</a>
+          <a href="community.html" data-i18n="nav.community">Communities</a>
+          <a href="scream-room.html" data-i18n="nav.scream">Scream room</a>
+          <a href="meditation.html" data-i18n="nav.meditate">Meditate</a>
+          <a href="breathing.html" data-i18n="nav.breathing">Breathing</a>
+        </nav>
+        <div class="divider"></div>
+        <nav class="sidebar-nav secondary" aria-label="Personal tools">
+          <a href="journal.html" data-i18n="nav.journal">Journal</a>
+          <a href="mood.html" data-i18n="nav.mood">Mood</a>
+          <a href="emotional-backpack.html" data-i18n="nav.backpack">Emotional Backpack</a>
+          <a href="mask-off.html" data-i18n="nav.maskOff">Mask Off</a>
+          <a href="vault.html" data-i18n="nav.vault">Vault</a>
+          <a href="budget-whisperer.html" data-i18n="nav.budget">Budget Whisperer</a>
+        </nav>
+        <div class="divider"></div>
+        <nav class="sidebar-nav secondary" aria-label="Account">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="profile.html" data-i18n="nav.profile">Profile</a>
+          <a href="settings.html" data-i18n="nav.settings">Settings</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="content-header">
+          <button id="sidebar-toggle" class="icon-button" aria-label="Toggle feature menu" aria-controls="app-sidebar">☰</button>
+          <div>
+            <p class="eyebrow" data-i18n="time.goodEvening">Good evening</p>
+            <h1 id="dashboard-greeting" data-i18n="page.hello">Hello, you.</h1>
+          </div>
+          <div class="header-actions">
+            <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle color theme">◐</button>
+            <label class="lang-switch">
+              <span data-i18n="nav.language">Language</span>
+              <select id="language-select" aria-label="Choose language">
+                <option value="en">English</option>
+                <option value="ha">Hausa</option>
+                <option value="ig">Igbo</option>
+                <option value="yo">Yorùbá</option>
+                <option value="pcm">Nigerian Pidgin</option>
+              </select>
+            </label>
+            <button id="notification-toggle" class="icon-button" aria-label="Notifications">🔔</button>
+            <a class="avatar" href="profile.html" aria-label="Profile">A</a>
+          </div>
+        </header>
+
+        <section class="dashboard-grid">
+          <article class="card feature-card large">
+            <div class="mini-title" data-i18n="card.nora">Nora</div>
+            <p data-i18n="card.noraText">Check in with your thoughts and notice what feels heavy right now.</p>
+            <button class="btn primary" data-route="chat.html" data-i18n="card.openNora">Open Nora</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.mood">Mood</div>
+            <p data-i18n="card.moodText">How do you feel today?</p>
+            <button class="btn secondary" data-route="mood.html" data-i18n="card.trackMood">Track mood</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.journal">Journal</div>
+            <p data-i18n="card.journalText">Write what needs to be said.</p>
+            <button class="btn secondary" data-route="journal.html" data-i18n="card.openJournal">Open journal</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.maskOff">Mask Off</div>
+            <p data-i18n="card.maskOffText">Say the part you have been carrying alone.</p>
+            <button class="btn secondary" data-route="mask-off.html" data-i18n="card.maskOffButton">Open Mask Off</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.backpack">Emotional Backpack</div>
+            <p data-i18n="card.backpackText">Notice what you carry and let some weight loosen.</p>
+            <button class="btn secondary" data-route="emotional-backpack.html" data-i18n="card.backpackButton">Open backpack</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.breathing">Breathing</div>
+            <p data-i18n="card.breathingText">Reset with a small pause.</p>
+            <button class="btn secondary" data-route="breathing.html" data-i18n="card.breathe">Breathe</button>
+          </article>
+
+          <article class="card feature-card">
+            <div class="mini-title" data-i18n="card.meditation">Meditation</div>
+            <p data-i18n="card.meditationText">Let the mind settle and come back to breath.</p>
+            <button class="btn secondary" data-route="meditation.html" data-i18n="card.meditationButton">Meditate</button>
+          </article>
+        </section>
+
+        <section class="dashboard-insights">
+          <article class="card tracker-card">
+            <div class="tracker-top">
+              <div>
+                <p class="eyebrow">Weekly + monthly</p>
+                <h2 data-i18n="dashboard.growth">Growth tracker</h2>
+              </div>
+              <button id="log-growth" class="btn secondary" type="button" data-i18n="dashboard.logWin">Log a win</button>
+            </div>
+
+            <div class="tracker-panels">
+              <div class="progress-box">
+                <div class="progress-row">
+                  <span data-i18n="dashboard.weekly">Weekly progress</span>
+                  <strong id="weekly-score">0%</strong>
+                </div>
+                <div class="progress-bar"><span id="weekly-bar"></span></div>
+              </div>
+
+              <div class="progress-box">
+                <div class="progress-row">
+                  <span data-i18n="dashboard.monthly">Monthly progress</span>
+                  <strong id="monthly-score">0%</strong>
+                </div>
+                <div class="progress-bar"><span id="monthly-bar"></span></div>
+              </div>
+            </div>
+
+            <div class="streak-row">
+              <div class="streak-badge">
+                <span id="streak-count">0</span>
+                <small data-i18n="dashboard.streak">day streak</small>
+              </div>
+              <div class="streak-badge soft">
+                <small>We are learning gently.</small>
+              </div>
+            </div>
+          </article>
+
+          <aside class="card notification-panel">
+            <div class="mini-title" data-i18n="dashboard.notifications">Notification centre</div>
+            <button id="show-quote" class="btn secondary" type="button" data-i18n="dashboard.todayQuote">Today’s quote</button>
+            <div id="notification-quote" class="quote-box">
+              “You are allowed to be human here.”
+            </div>
+            <small class="quote-meta">A small note to return to yourself.</small>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

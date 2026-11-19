@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Noracle is a calm, private emotional wellness companion." />
+    <title>Noracle | Somewhere you can be yourself.</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-dusk">
+    <div class="stars" aria-hidden="true"></div>
+    <header class="topbar">
+      <nav class="nav container">
+        <div class="brand" aria-label="Noracle home">
+          <span class="brand-mark">N</span>
+          <span>Noracle</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About Noracle</a>
+          <a href="#why">Why Noracle</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Change color theme">
+            <span aria-hidden="true">◐</span>
+          </button>
+          <button class="btn ghost" data-route="onboarding.html?mode=login">Log in</button>
+          <button class="btn primary" data-route="onboarding.html?mode=signup">Sign up</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container landing">
+      <section class="hero">
+        <div class="eyebrow">AI wellness companion</div>
+        <h1>Somewhere you can be yourself.</h1>
+        <p>
+          A little space to breathe, reflect and be heard. No judgment. No pressure.
+          Just you.
+        </p>
+        <div class="cta-row">
+          <button class="btn primary large" data-route="onboarding.html" data-i18n="landing.ctaPrimary">Start your journey</button>
+          <button class="btn secondary large" data-route="dashboard.html" data-i18n="landing.ctaSecondary">Explore Noracle</button>
+        </div>
+        <div class="disclosure">
+          Noracle is an AI-powered emotional wellness companion, not a therapist.
+        </div>
+      </section>
+
+      <aside class="card feature-card">
+        <div class="mini-title">What Noracle offers</div>
+        <ul>
+          <li>Gentle, private conversations</li>
+          <li>Reflective journaling</li>
+          <li>Breathing and meditation tools</li>
+          <li>Support that encourages real human connection</li>
+        </ul>
+      </aside>
+    </main>
+
+    <section class="container section ai-stories" aria-labelledby="ai-stories-title">
+      <div class="ai-stories-heading">
+        <div class="eyebrow">A thoughtful partnership</div>
+        <h2 id="ai-stories-title">Working with AI, on your terms</h2>
+        <p>Explore how gentle AI support can make room for reflection and personal growth.</p>
+      </div>
+      <div class="ai-gallery">
+        <article class="card ai-story-card">
+          <img
+            src="./assets/ai-partnership.png"
+            alt="A person and a robotic hand meeting in a handshake"
+            loading="lazy"
+          />
+          <div class="ai-story-copy">
+            <span class="ai-tag">Working with AI</span>
+            <h3>A supportive partnership</h3>
+            <p>Use technology as a companion for reflection, while keeping your choices your own.</p>
+          </div>
+        </article>
+        <article class="card ai-story-card">
+          <img
+            src="./assets/ai-conversation.png"
+            alt="A person having a thoughtful conversation with a friendly robot"
+            loading="lazy"
+          />
+          <div class="ai-story-copy">
+            <span class="ai-tag">Working with AI to improve you</span>
+            <h3>Space to think out loud</h3>
+            <p>Gentle prompts can help you notice what matters and find words for what you feel.</p>
+          </div>
+        </article>
+        <article class="card ai-story-card">
+          <img
+            src="./assets/ai-guidance.png"
+            alt="A human hand reaching toward the hand of a robot"
+            loading="lazy"
+          />
+          <div class="ai-story-copy">
+            <span class="ai-tag">Working with AI to improve you</span>
+            <h3>Small steps, at your pace</h3>
+            <p>Build self-awareness and explore helpful next steps, one moment at a time.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About Noracle</h2>
+      <p>
+        Noracle is built to listen without judgment. It helps users pause, reflect,
+        and connect with healthier habits and support, while staying honest about the
+        limits of AI care.
+      </p>
+    </section>
+
+    <section id="why" class="container section">
+      <h2>Why Noracle</h2>
+      <div class="why-grid">
+        <article class="safe-design card">
+          <img
+            src="./assets/safe-by-design.png"
+            alt="An imagined meeting between a person and a robot, inspired by a fresco"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow" data-i18n="safe.peopleFirst">People first</p>
+            <h3 data-i18n="safe.title">Safe by design</h3>
+            <p>
+              Noracle is AI, not a therapist. It is designed to encourage real human
+              support and to be clear about the limits of an AI conversation.
+            </p>
+            <p>
+              You stay in control of whether you use Noracle. When you need support,
+              connecting with a trusted person or qualified professional matters.
+            </p>
+          </div>
+        </article>
+
+        <article class="human-centered card">
+          <img
+            src="./assets/human-centered.png"
+            alt="A robot and a person working together at a desk"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">Designed around you</p>
+            <h3>Human-centered</h3>
+            <p>
+              AI can support reflection, but it does not replace human care or
+              connection. Noracle keeps your choices, privacy, and independence at the center.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contact" class="container section footer">
+      <h2>Contact</h2>
+      <p>hello@noracle.example</p>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

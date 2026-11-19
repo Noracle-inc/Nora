@@ -1,0 +1,26 @@
+.account-entry {
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.account-entry h2 {
+  margin-bottom: 10px;
+  font-size: 1.35rem;
+}
+
+.account-entry > p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.account-entry #continue-onboarding {
+  width: 100%;
+  justify-self: stretch;
+}
+
+.account-entry .stacked-form {
+  margin-top: 18px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Onboarding</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+  <body class="theme-dusk onboarding-page">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container onboarding">
+      <div class="card onboarding-card">
+        <div class="eyebrow">Step 1 of 2</div>
+        <h1>Create your private account</h1>
+        <section class="account-entry" aria-labelledby="account-entry-heading">
+          <h2 id="account-entry-heading">Your private account</h2>
+          <p>Sign in to save your profile and reflections to your own account. Your entries are not shared with other users.</p>
+          <form id="auth-form" class="stacked-form">
+            <label>
+              <span>Email</span>
+              <input id="auth-email" type="email" autocomplete="username" maxlength="254" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input id="auth-password" type="password" autocomplete="new-password" minlength="8" required />
+            </label>
+            <div class="form-actions">
+              <button id="auth-submit" class="btn primary" type="submit" disabled>Create account</button>
+              <button id="auth-mode-toggle" class="btn secondary" type="button" disabled>I already have an account</button>
+            </div>
+            <span id="auth-status" class="status-text" role="status" aria-live="polite">
+              Account sign-in becomes available after Firebase is configured for this deployment.
+            </span>
+            <button id="auth-sign-out" class="btn ghost" type="button" hidden>Sign out</button>
+            <button id="continue-onboarding" class="btn primary" type="button" onclick="document.querySelector('.account-entry').classList.add('hidden');document.querySelector('#onboarding-form').classList.remove('hidden');document.querySelector('.onboarding-card > .eyebrow').textContent='Step 2 of 2';document.querySelector('.onboarding-card > h1').textContent='Make Noracle feel like yours';">Continue to personalization</button>
+          </form>
+        </section>
+
+        <form class="onboarding-form hidden" id="onboarding-form">
+          <div class="step active">
+            <label>
+              What do you want from Noracle?
+              <select>
+                <option>Someone to talk to</option>
+                <option>Understanding my emotions</option>
+                <option>Managing stress</option>
+                <option>Building better habits</option>
+                <option>Exploring my thoughts</option>
+                <option>Just looking around</option>
+              </select>
+            </label>
+          </div>
+          <div class="step">
+            <label>
+              Preferred response style
+              <select>
+                <option>Short</option>
+                <option>Balanced</option>
+                <option>Detailed</option>
+              </select>
+            </label>
+          </div>
+          <div class="step">
+            <label>
+              Your preferred tone
+              <select>
+                <option>Gentle</option>
+                <option>Casual</option>
+                <option>Reflective</option>
+                <option>Direct</option>
+                <option>Adaptive</option>
+              </select>
+            </label>
+          </div>
+          <div class="step">
+            <label>
+              Privacy mode
+              <select>
+                <option>Memory off</option>
+                <option>Memory on, editable</option>
+                <option>Don't save this chat</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="cta-row">
+            <button type="button" class="btn ghost" id="prev-step">Back</button>
+            <button type="button" class="btn primary" id="next-step">Next</button>
+            <button type="submit" class="btn primary hidden" id="finish-step">Enter dashboard</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/auth-ui.js"></script>
+    <script type="module" src="./js/onboarding.js"></script>
+  </body>
+</html>

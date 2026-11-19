@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Profile</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-light-starry app-shell">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell">
+      <div class="page-card card profile-shell">
+        <div class="feature-header">
+          <a href="dashboard.html" class="back-link">← Back</a>
+          <div>
+            <p class="eyebrow">Your presence</p>
+            <h1 data-i18n="profile.title">Profile</h1>
+          </div>
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle color theme">◐</button>
+        </div>
+
+        <section class="panel-block" aria-labelledby="account-heading">
+          <h2 id="account-heading">Your account</h2>
+          <p id="profile-account-status" class="muted-copy" aria-live="polite">
+            Sign in to link this profile to your private account.
+            <a href="onboarding.html">Sign in</a>
+          </p>
+        </section>
+
+        <form id="profile-form" class="stacked-form">
+          <div class="form-row">
+            <label>
+              <span data-i18n="profile.name">Display name</span>
+              <input id="profile-name" type="text" placeholder="You" maxlength="60" autocomplete="nickname" required />
+            </label>
+            <label>
+              <span data-i18n="profile.pronouns">Pronouns</span>
+              <input id="profile-pronouns" type="text" placeholder="they/them" maxlength="40" />
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="profile.greeting">Greeting</span>
+            <input id="profile-greeting" type="text" placeholder="Hello, you." maxlength="100" />
+          </label>
+
+          <label>
+            <span data-i18n="profile.bio">Short bio</span>
+            <textarea id="profile-bio" rows="4" maxlength="300" placeholder="I am learning gently and listening to my own rhythm."></textarea>
+          </label>
+
+          <label>
+            <span data-i18n="profile.focus">Current focus</span>
+            <input id="profile-focus" type="text" maxlength="100" placeholder="Calm, clarity, and rest." />
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit" data-i18n="profile.save">Save profile</button>
+            <span id="profile-status" class="status-text" role="status" aria-live="polite">Your profile is stored in this browser until you sign in.</span>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/profile.js"></script>
+  </body>
+</html>

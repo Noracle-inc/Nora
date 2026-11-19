@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Emotional Backpack</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-dusk">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell backpack-shell">
+      <header class="feature-header">
+        <a href="dashboard.html" class="back-link">← Back</a>
+        <div>
+          <p class="eyebrow">Personal reflection</p>
+          <h1>Emotional Backpack</h1>
+        </div>
+        <button class="btn primary" id="show-burden-form" type="button">Add to Backpack</button>
+      </header>
+
+      <section class="backpack-grid">
+        <div class="panel burden-panel">
+          <div class="panel-block">
+            <h2>Active burdens</h2>
+            <div id="burden-list" class="burden-list"></div>
+          </div>
+        </div>
+
+        <div class="panel detail-panel">
+          <div id="burden-detail" class="burden-detail empty-state">
+            <h2>Select a burden</h2>
+            <p>Choose a burden to unpack it gently and reflect on what feels heavy right now.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside id="burden-form-panel" class="drawer hidden">
+      <div class="drawer-card">
+        <div class="drawer-header">
+          <h2>What is weighing on you?</h2>
+          <button class="btn ghost" id="close-burden-form" type="button">Close</button>
+        </div>
+
+        <form id="burden-form" class="burden-form">
+          <label>
+            Title
+            <input type="text" id="burden-title" name="title" placeholder="Feeling behind" required />
+          </label>
+
+          <label>
+            Description
+            <textarea id="burden-description" name="description" rows="4" placeholder="Tell us a little about it..."></textarea>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              Category
+              <select id="burden-category" name="category">
+                <option>Family</option>
+                <option>Relationships</option>
+                <option>Academics</option>
+                <option>Finances</option>
+                <option>Career</option>
+                <option>Self-worth</option>
+                <option>Personal expectations</option>
+                <option>Friendship</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              Intensity
+              <select id="burden-intensity" name="intensity">
+                <option>Light</option>
+                <option selected>Moderate</option>
+                <option>Heavy</option>
+                <option>Overwhelming</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            How long has this been weighing on you?
+            <input type="text" id="burden-duration" name="duration" placeholder="A few weeks, a few months..." />
+          </label>
+
+          <label>
+            Optional context
+            <textarea id="burden-context" name="context" rows="3" placeholder="Anything else you want to note?"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn ghost" type="button" id="cancel-burden">Cancel</button>
+            <button class="btn primary" type="submit">Save burden</button>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/emotional-backpack.js"></script>
+  </body>
+</html>

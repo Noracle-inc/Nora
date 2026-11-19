@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Meditation</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-light-starry">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell meditation-shell">
+      <div class="card page-card meditation-card">
+        <div class="feature-header">
+          <a href="dashboard.html" class="back-link">← Back</a>
+          <div>
+            <p class="eyebrow">Stillness</p>
+            <h1>Meditation</h1>
+          </div>
+        </div>
+
+        <div class="meditation-grid">
+          <article class="mini-card meditation-card-item active">
+            <h3>Reset</h3>
+            <p>5 minutes · Gentle calm</p>
+            <button class="btn secondary" type="button" data-session="reset">Begin</button>
+          </article>
+
+          <article class="mini-card meditation-card-item">
+            <h3>Grounding</h3>
+            <p>8 minutes · Body and breath</p>
+            <button class="btn secondary" type="button" data-session="grounding">Begin</button>
+          </article>
+
+          <article class="mini-card meditation-card-item">
+            <h3>Quiet focus</h3>
+            <p>10 minutes · Clear the noise</p>
+            <button class="btn secondary" type="button" data-session="focus">Begin</button>
+          </article>
+
+          <article class="mini-card meditation-card-item">
+            <h3>Sleep drift</h3>
+            <p>12 minutes · Easing the mind</p>
+            <button class="btn secondary" type="button" data-session="sleep">Begin</button>
+          </article>
+        </div>
+
+        <div class="meditation-player">
+          <div class="orb small" id="meditation-orb">Reset</div>
+          <div class="meditation-copy">
+            <p id="meditation-status">Begin softly. Notice the breath without forcing it.</p>
+            <button class="btn primary" id="meditation-toggle" type="button">Start session</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/meditation.js"></script>
+  </body>
+</html>

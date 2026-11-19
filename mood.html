@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Mood</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-dusk">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell">
+      <div class="card page-card">
+        <h1>Mood</h1>
+        <div class="mood-grid">
+          <button class="mood-pill" data-mood="very-low" type="button">Very low</button>
+          <button class="mood-pill" data-mood="low" type="button">Low</button>
+          <button class="mood-pill" data-mood="okay" type="button">Okay</button>
+          <button class="mood-pill" data-mood="good" type="button">Good</button>
+          <button class="mood-pill" data-mood="very-good" type="button">Very good</button>
+        </div>
+        <label class="mood-note-label" for="mood-note">Anything you want to note? (optional)</label>
+        <textarea id="mood-note" rows="3" maxlength="1000" placeholder="A few words about how you feel..."></textarea>
+        <button id="save-mood" class="btn primary" type="button" disabled>Save mood</button>
+        <p id="mood-status" class="status-text" role="status" aria-live="polite">
+          Unsigned mood check-ins are saved only in this browser.
+        </p>
+        <section class="mood-history">
+          <h2>Recent check-ins</h2>
+          <ul id="mood-history-list" class="entry-list"></ul>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/mood.js"></script>
+  </body>
+</html>

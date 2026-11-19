@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noracle | Journal</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+  </head>
+  <body class="theme-light-starry">
+    <div class="stars" aria-hidden="true"></div>
+    <main class="container page-shell journal-shell">
+      <div class="card page-card journal-card">
+        <div class="feature-header">
+          <a href="dashboard.html" class="back-link">← Back</a>
+          <div>
+            <p class="eyebrow">Private writing</p>
+            <h1>Journal</h1>
+          </div>
+        </div>
+
+        <form id="journal-form" class="journal-form">
+          <label>
+            Title
+            <input type="text" id="journal-title" placeholder="A quiet thought" />
+          </label>
+
+          <label>
+            What is on your mind?
+            <textarea id="journal-entry" rows="8" placeholder="Write what needs to be said without fixing it."></textarea>
+          </label>
+
+          <div class="cta-row">
+            <button class="btn ghost" id="save-draft" type="button">Save draft</button>
+            <button class="btn primary" type="submit">Save entry</button>
+          </div>
+        </form>
+        <p id="journal-status" class="status-text" role="status" aria-live="polite">
+          Unsigned entries are saved only in this browser. Sign in to save them to your account.
+        </p>
+
+        <div class="journal-history">
+          <h2>Recent entries</h2>
+          <div id="journal-list" class="entry-list"></div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/journal.js"></script>
+  </body>
+</html>

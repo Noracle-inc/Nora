@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Noracle spiral logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9b8ff" />
+      <stop offset="50%" stop-color="#7957e8" />
+      <stop offset="100%" stop-color="#f28cbf" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="url(#g)" stroke-width="8" opacity="0.8"/>
+  <path d="M60 18c-22 0-40 18-40 40s18 40 40 40 40-18 40-40-18-40-40-40zm0 18c12 0 22 10 22 22s-10 22-22 22-22-10-22-22 10-22 22-22z" fill="none" stroke="url(#g)" stroke-width="6"/>
+</svg>
